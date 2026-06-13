@@ -1,0 +1,6 @@
+{
+  "name": "Student Registry & Report Cards",
+  "description": "A student dashboard for managing records (CRUD), tracking sports participation with visual sport themes, and generating detailed report cards with automated GPA and performance metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,157 @@
+import { SportInfo, Student } from '../types';
+import footballImage from '../assets/images/football_player_1781345145223.jpg';
+import cricketImage from '../assets/images/cricket_player.jpg';
+import student1 from '../assets/images/students/student_1.jpg';
+import student2 from '../assets/images/students/student_2.jpg';
+import student3 from '../assets/images/students/student_3.jpg';
+import student4 from '../assets/images/students/student_4.jpg';
+import student5 from '../assets/images/students/student_5.jpg';
+
+export const SPORTS_DATA: Record<string, SportInfo> = {
+  Football: {
+    name: 'Football',
+    image: footballImage,
+    icon: '⚽',
+    color: 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100/80',
+    textColor: 'text-emerald-700',
+    borderColor: 'border-emerald-200',
+  },
+  Basketball: {
+    name: 'Basketball',
+    image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&auto=format&fit=crop&q=80',
+    icon: '🏀',
+    color: 'bg-amber-50 text-amber-700 hover:bg-amber-100/80',
+    textColor: 'text-amber-700',
+    borderColor: 'border-amber-200',
+  },
+  Tennis: {
+    name: 'Tennis',
+    image: 'https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800&auto=format&fit=crop&q=80',
+    icon: '🎾',
+    color: 'bg-lime-50 text-lime-700 hover:bg-lime-100/80',
+    textColor: 'text-lime-700',
+    borderColor: 'border-lime-200',
+  },
+  Swimming: {
+    name: 'Swimming',
+    image: 'https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=800&auto=format&fit=crop&q=80',
+    icon: '🏊',
+    color: 'bg-sky-50 text-sky-700 hover:bg-sky-100/80',
+    textColor: 'text-sky-700',
+    borderColor: 'border-sky-200',
+  },
+  Cricket: {
+    name: 'Cricket',
+    image: cricketImage,
+    icon: '🏏',
+    color: 'bg-orange-50 text-orange-700 hover:bg-orange-100/80',
+    textColor: 'text-orange-700',
+    borderColor: 'border-orange-200',
+  },
+  Running: {
+    name: 'Running',
+    image: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&auto=format&fit=crop&q=80',
+    icon: '🏃',
+    color: 'bg-rose-50 text-rose-700 hover:bg-rose-100/80',
+    textColor: 'text-rose-700',
+    borderColor: 'border-rose-200',
+  },
+};
+
+export const SEED_STUDENTS: Student[] = [
+  {
+    id: 'stud-1',
+    name: 'Rohan Mehta',
+    rollNumber: 'RME-101',
+    gradeClass: 'Grade 10-A',
+    age: 15,
+    sport: 'Football',
+    gender: 'Male',
+    scores: {
+      math: 88,
+      science: 92,
+      english: 85,
+      sports: 98,
+      art: 77,
+    },
+    remarks: 'Rohan demonstrates exceptional leadership in football tactics and maintains outstanding grades in STEM areas.',
+    dateAdded: '2026-02-14',
+    avatarUrl: student1,
+  },
+  {
+    id: 'stud-2',
+    name: 'Diya Sharma',
+    rollNumber: 'DSH-104',
+    gradeClass: 'Grade 10-B',
+    age: 16,
+    sport: 'Basketball',
+    gender: 'Female',
+    scores: {
+      math: 95,
+      science: 89,
+      english: 91,
+      sports: 94,
+      art: 88,
+    },
+    remarks: 'Diya shows impeccable court coordination and outstanding overall academic consistency. Highly receptive to critical feedback.',
+    dateAdded: '2026-03-01',
+    avatarUrl: student2,
+  },
+  {
+    id: 'stud-3',
+    name: 'Kabir Kapoor',
+    rollNumber: 'KKP-208',
+    gradeClass: 'Grade 11-A',
+    age: 17,
+    sport: 'Tennis',
+    gender: 'Male',
+    scores: {
+      math: 72,
+      science: 80,
+      english: 74,
+      sports: 95,
+      art: 83,
+    },
+    remarks: 'Kabir displays excellent reflexes and powerful forehand strokes. Needs to maintain consistent attention during theoretical tests.',
+    dateAdded: '2026-04-10',
+    avatarUrl: student3,
+  },
+  {
+    id: 'stud-4',
+    name: 'Ananya Sen',
+    rollNumber: 'ASE-112',
+    gradeClass: 'Grade 9-C',
+    age: 14,
+    sport: 'Swimming',
+    gender: 'Female',
+    scores: {
+      math: 99,
+      science: 98,
+      english: 96,
+      sports: 89,
+      art: 91,
+    },
+    remarks: 'Ananya is an elite academic performer with a disciplined swimming record. A role model student in every category.',
+    dateAdded: '2026-05-18',
+    avatarUrl: student4,
+  },
+  {
+    id: 'stud-5',
+    name: 'Aarav Jha',
+    rollNumber: 'AJH-303',
+    gradeClass: 'Grade 11-B',
+    age: 17,
+    sport: 'Cricket',
+    gender: 'Male',
+    scores: {
+      math: 63,
+      science: 68,
+      english: 82,
+      sports: 97,
+      art: 75,
+    },
+    remarks: 'Aarav is an elite cricket batsman, demonstrating state-level capabilities. Recommended to attend algebra remedial coaching sessions.',
+    dateAdded: '2026-06-02',
+    avatarUrl: student5,
+  },
+];
