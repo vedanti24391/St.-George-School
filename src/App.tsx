@@ -195,9 +195,9 @@ export default function App() {
     <div className="h-screen w-full bg-slate-50 font-sans text-slate-900 flex flex-col overflow-hidden">
       
       {/* Header Navigation consistent with Professional Polish with a crisp border */}
-      <header className="h-16 flex items-center justify-between px-8 bg-blue-200 border-b border-blue-300 shrink-0 z-40">
+      <header className="h-16 flex items-center justify-between px-8 bg-gradient-to-r from-blue-600 via-blue-600 to-indigo-600 border-b border-blue-700 shrink-0 z-40 text-white shadow-xs">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-lg shadow-indigo-100">
+          <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-md border border-blue-400/30">
             <img
               src={schoolLogo}
               alt="St. George School Crest"
@@ -206,18 +206,18 @@ export default function App() {
             />
           </div>
           <div>
-            <span className="text-xl font-bold tracking-tight text-slate-800 leading-none block">St. George School</span>
-            <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-0.5">Varsity Academic Portal</span>
+            <span className="text-xl font-black tracking-tight text-white leading-none block">St. George Academy</span>
+            <span className="text-[9px] text-blue-100/90 font-bold uppercase tracking-wider block mt-0.5">Varsity Academic Portal</span>
           </div>
         </div>
 
         {/* Global info or brief counter overlay */}
         <div className="flex items-center gap-6">
           <div className="text-right hidden sm:block">
-            <div className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Academic Year</div>
-            <div className="text-xs font-bold text-slate-800">2026 Season</div>
+            <div className="text-[10px] text-blue-200/90 font-bold uppercase tracking-wider">Academic Year</div>
+            <div className="text-xs font-bold text-white">2026 Season</div>
           </div>
-          <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-xs text-indigo-700 ring-2 ring-indigo-50">
+          <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center font-bold text-xs text-blue-800 ring-2 ring-blue-200">
             ST
           </div>
         </div>
@@ -345,7 +345,7 @@ export default function App() {
         </nav>
 
         {/* Central main content roster */}
-        <section className="flex-grow flex flex-col justify-between overflow-y-auto p-8 bg-slate-50">
+        <section className="flex-grow flex flex-col justify-between overflow-y-auto p-8 bg-gradient-to-br from-slate-50 via-slate-50/90 to-slate-100/70">
           <div className="flex-1">
             
             {/* Stage title block */}

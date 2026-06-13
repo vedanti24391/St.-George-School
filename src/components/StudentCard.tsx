@@ -23,7 +23,7 @@ export const StudentCard: React.FC<StudentCardProps> = ({ student, onViewReport,
   return (
     <div
       id={`student-card-${student.id}`}
-      className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group"
+      className="bg-gradient-to-b from-white to-slate-50/50 rounded-2xl overflow-hidden border border-slate-200/90 shadow-3xs hover:shadow-sm hover:border-slate-300 hover:shadow-indigo-100/30 transition-all duration-300 flex flex-col h-full group hover:-translate-y-0.5"
     >
       {/* Card Header Background reflecting Sport Choice */}
       <div className="relative h-32 overflow-hidden bg-slate-100">

@@ -49,6 +49,7 @@ export function DashboardStats({ students }: DashboardStatsProps) {
       subtext: 'Active standard records',
       icon: Users,
       color: 'bg-indigo-50 border-indigo-100 text-indigo-600 dark:bg-indigo-950/20 dark:border-indigo-950/50',
+      bgGradient: 'from-white via-white/95 to-indigo-50/40 border-indigo-100 hover:border-indigo-200/80 shadow-indigo-100/20',
     },
     {
       id: 'overall-gpa',
@@ -57,6 +58,7 @@ export function DashboardStats({ students }: DashboardStatsProps) {
       subtext: 'All subjects consolidated',
       icon: TrendingUp,
       color: 'bg-emerald-50 border-emerald-100 text-emerald-600 dark:bg-emerald-950/20 dark:border-emerald-950/50',
+      bgGradient: 'from-white via-white/95 to-emerald-50/40 border-emerald-100 hover:border-emerald-200/80 shadow-emerald-100/20',
     },
     {
       id: 'top-sport',
@@ -65,6 +67,7 @@ export function DashboardStats({ students }: DashboardStatsProps) {
       subtext: topCount > 0 ? `${topCount} active participants` : 'No sports registered',
       icon: Trophy,
       color: 'bg-amber-50 border-amber-100 text-amber-600 dark:bg-amber-950/20 dark:border-amber-950/50',
+      bgGradient: 'from-white via-white/95 to-amber-50/40 border-amber-100 hover:border-amber-200/80 shadow-amber-100/20',
     },
     {
       id: 'elite-students',
@@ -73,6 +76,7 @@ export function DashboardStats({ students }: DashboardStatsProps) {
       subtext: 'Score of 98%+ in subjects',
       icon: Sparkles,
       color: 'bg-purple-50 border-purple-100 text-purple-600 dark:bg-purple-950/20 dark:border-purple-950/50',
+      bgGradient: 'from-white via-white/95 to-purple-50/40 border-purple-100 hover:border-purple-200/80 shadow-purple-100/20',
     },
     {
       id: 'passing-rate',
@@ -81,6 +85,7 @@ export function DashboardStats({ students }: DashboardStatsProps) {
       subtext: 'Zero failing subjects',
       icon: ShieldCheck,
       color: 'bg-sky-50 border-sky-100 text-sky-600 dark:bg-sky-950/20 dark:border-sky-950/50',
+      bgGradient: 'from-white via-white/95 to-sky-50/40 border-sky-100 hover:border-sky-200/80 shadow-sky-100/20',
     },
   ];
 
@@ -92,7 +97,7 @@ export function DashboardStats({ students }: DashboardStatsProps) {
           <div
             key={stat.id}
             id={stat.id}
-            className="bg-white border border-slate-150 rounded-2xl p-5 shadow-xs flex flex-col justify-between transition-all hover:shadow-sm hover:border-slate-200"
+            className={`bg-gradient-to-br ${stat.bgGradient} border rounded-2xl p-5 shadow-3xs flex flex-col justify-between transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xs`}
           >
             <div className="flex items-center justify-between mb-3">
               <span className="text-slate-500 text-xs font-semibold tracking-wider uppercase">
